@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/projectname"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="Project Name"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_notstarted" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="0dp"
+                android:padding="30dp">
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imname"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_project" />
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="30dp"
+                        android:text="Project Name:-"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvproject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t1"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="left"
+                        android:text="Project Name"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/r1">
+
+                    <ImageView
+                        android:id="@+id/imdisc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_disc" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="30dp"
+                        android:text="Project Detail:-"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvdis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t2"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="left"
+                        android:text="Project Discription"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/r2">
+
+                    <ImageView
+                        android:id="@+id/imdate"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_dob" />
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="30dp"
+                        android:text="Assigned Date:-"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:id="@+id/tvdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t3"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="left"
+                        android:text="Date Of Assign"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@id/r4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/r3">
+
+                    <ImageView
+                        android:id="@+id/imassign"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_assign" />
+
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="30dp"
+                        android:text="Assign By:-"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvassign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t4"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="12dp"
+                        android:foregroundGravity="center"
+                        android:gravity="left"
+                        android:text="Assigned By"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl1">
+
+                <TextView
+                    android:id="@+id/q"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/alegreya_sans_sc_bold_italic"
+                    android:text="Files And Information"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:paddingBottom="20dp"/>
+
+
+                <ImageView
+                    android:id="@+id/file"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/q"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/file" />
+
+                <ImageView
+                    android:id="@+id/file1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/q"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/file"
+                    android:src="@drawable/file" />
+
+                <ImageView
+                    android:id="@+id/file2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/q"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/file1"
+                    android:src="@drawable/file" />
+
+                <ImageView
+                    android:id="@+id/file3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/q"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/file2"
+                    android:src="@drawable/file" />
+
+
+            </RelativeLayout>
+
+
+
+
+            <!--This below relativelayout will be deleted afterwords-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl1"
+                android:paddingTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="20dp"
+                    android:text="Swipe right for more project."
+                    android:textColor="#29C82F" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_right" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

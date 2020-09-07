@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "363587412430",
+    "firebase_url": "https://coderspot-a3fb1.firebaseio.com",
+    "project_id": "coderspot-a3fb1",
+    "storage_bucket": "coderspot-a3fb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363587412430:android:0b9388d7bf3638d1aecb9f",
+        "android_client_info": {
+          "package_name": "com.example.coderspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363587412430-jt9httod33ojpdrlmkhsfe12pff924al.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm68BO6m7W_SoLfQe4ng8lKpRbpsgAOlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363587412430-jt9httod33ojpdrlmkhsfe12pff924al.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

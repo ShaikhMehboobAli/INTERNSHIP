@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CODERSPOT</string>
+    <string name="title_activity_mainhome">mainhome</string>
+    <string name="tab_text_1">Contact Us</string>
+    <string name="tab_text_2">Images</string>
+    <string name="tab_text_3">View Images</string>
+    <string name="tab_text_4">New Task</string>
+    <string name="title_activity_tabactivity">tabactivity</string>
+    <string name="first_name">Enter Name</string>
+
+    //onBording
+
+    //titles
+    <string name="hello_world">Hello World!</string>
+    <string name="snd_title">Be A Leader</string>
+    <string name="thrd_title">Walk With Your Dreams</string>
+    <string name="forth_title">Sit Back and Enjoy</string>
+
+    //description
+    <string name="welcome">Welcome To The CoderSpot  . We will give u the Best comfort and a better Experiance for your Project.</string>
+    <string name="snd_line">Always Be A Leader To Achieve Your Desire Goal. Just make a step with us and become the leader of your life.</string>
+    <string name="thrd_lin">Make Your Dream Your BestFriend and Be a Part of Coderspot. You can do Every thing you wanted to be.</string>
+    <string name="forth_line">We will handle everything for you.As you have the app in your pocket then u don\'t have to worry about.</string>
+
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="lets_get_started">Lets Get Started</string>
+
+
+</resources>

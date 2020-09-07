@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:padding="40dp"
+    tools:context=".common.Activity_registrtn_and_login_panel">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/baloo"
+            android:src="@drawable/logo_login" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/r1">
+
+
+            <FrameLayout
+                android:id="@+id/f1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/member"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_bgall"
+                android:clickable="true">
+
+                <Button
+                    android:id="@+id/adminlogin"
+                    style="@style/Widget.AppCompat.ActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="adminLogin"
+                    android:drawableLeft="@drawable/ic_adminlogin"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="Admin Login"
+                    android:textColor="@color/adminloginicon" />
+
+                <!--            <Button-->
+                <!--                android:id="@+id/admin"-->
+                <!--                android:layout_width="fill_parent"-->
+                <!--                android:paddingLeft="12dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_above="@+id/login"-->
+                <!--                android:layout_centerInParent="true"-->
+                <!--                android:layout_marginStart="35dp"-->
+                <!--                android:layout_marginEnd="5dp"-->
+                <!--                android:layout_marginBottom="10dp"-->
+                <!--                android:background="@drawable/btn_bgall"-->
+                <!--                android:drawableStart="@drawable/ic_adminlogin"-->
+                <!--                style="@style/Widget.AppCompat.ActionButton"-->
+                <!--                android:duplicateParentState="true"-->
+                <!--                android:drawablePadding="4dp"-->
+                <!--                android:gravity="center_vertical"-->
+                <!--                android:fontFamily="@font/roboto"-->
+                <!--                android:text="Admin Login"-->
+                <!--                android:textColor="#4691CE"-->
+                <!--                android:transitionName="transition_login" />-->
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/registr"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_admi"
+                android:clickable="true">
+
+                <Button
+                    android:id="@+id/login"
+                    style="@style/Widget.AppCompat.ActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_memberlogin"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:onClick="login"
+                    android:text="Team Member Login"
+                    android:textColor="@color/white" />
+
+
+            </FrameLayout>
+
+            <!--            <Button-->
+            <!--                android:id="@+id/login"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:onClick="login"-->
+            <!--                android:layout_above="@+id/registr"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/member_login"-->
+            <!--                android:transitionName="transition_register"/>-->
+
+            <Button
+
+                android:id="@+id/registr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:onClick="register"
+                android:text="New Team Member? \n Create Account"
+                android:transitionName="transition_register" />
+            <!--    android:layout_below="@+id/member"-->
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
