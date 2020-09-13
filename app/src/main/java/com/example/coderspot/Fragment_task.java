@@ -54,13 +54,13 @@ public class Fragment_task extends Fragment {
         TextView tvongoing = view.findViewById(R.id.tvongoing);
         TextView tvcompleted = view.findViewById(R.id.tvcompleted);
         TextView tvnotstarted = view.findViewById(R.id.tvnotstarted);
-        TextView tvname = view.findViewById(R.id.tvname);
+        final TextView tvname = view.findViewById(R.id.tvname);
 //        tvproject.setText("Project Name="+taskuser.getDisplayName().toString());
 
         fref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String value1 = snapshot.child("fname").getValue(String.class);
+                String value1 = snapshot.child("etfname").getValue(String.class);
 
                 tvname.setText("Welcome " + value1);
             }

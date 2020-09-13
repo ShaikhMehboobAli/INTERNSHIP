@@ -118,38 +118,14 @@
                 android:textStyle="bold" />
         </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/r4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/r3">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/ic_dob" />
-
-            <TextView
-                android:id="@+id/tvdob"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|center_vertical"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="30dp"
-                android:foregroundGravity="center_vertical"
-                android:gravity="clip_vertical"
-                android:text="DOB"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
+        
 
 
         <RelativeLayout
             android:id="@+id/r5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/r4">
+            android:layout_below="@id/r3">
 
             <ImageView
                 android:layout_width="50dp"

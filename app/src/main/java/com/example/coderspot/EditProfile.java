@@ -111,18 +111,18 @@ public class EditProfile extends AppCompatActivity {
                     return;
                 }
 
-                String email = PEmail.getText().toString();
+                final String email = PEmail.getText().toString();
                 user.updateEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         //DatabaseReference dataref = database.getReference().child("user").
                         DatabaseReference dataref = FirebaseDatabase.getInstance().getReference("user").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
                         Map<String,Object> edited = new HashMap<>();
-                        edited.put("email",email);
-                        edited.put("fname",PfullName.getText().toString());
-                        edited.put("phno",PPhoneNo.getText().toString());
-                        edited.put("position",PPosition.getText().toString());
-                        edited.put("team",PTeam.getText().toString());
+                        edited.put("etmail",email);
+                        edited.put("etfname",PfullName.getText().toString());
+                        edited.put("etphno",PPhoneNo.getText().toString());
+                        edited.put("etposition",PPosition.getText().toString());
+                        edited.put("etteam",PTeam.getText().toString());
                         dataref.updateChildren(edited).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
@@ -210,7 +210,7 @@ public class EditProfile extends AppCompatActivity {
 
     private void uploadImageToFirebase(Uri imageUri) {
         //upload images to firbase reference
-        StorageReference fileRef = storageReference.child("users/"+mAuth.getCurrentUser().getUid() +"profile.jpg");
+        final StorageReference fileRef = storageReference.child("users/"+mAuth.getCurrentUser().getUid() +"profile.jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
